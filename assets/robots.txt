@@ -28,6 +28,11 @@ int main(int argc, char const *argv[])
     struct ip* ip_hdr;
     struct icmphdr* icmp_hdr;
 
+    if (argc < 2) {
+        printf("%s <ip address>",argv[0]);
+        exit(0);
+    }
+
     sockfd = socket(AF_INET,SOCK_RAW,IPPROTO_ICMP);
     if(sockfd < 0){
         perror("socket");
@@ -35,6 +40,10 @@ int main(int argc, char const *argv[])
 
     while (1)
     {
+        // Attempt at modification 2
+        sock_addr.sin_family = AF_INET;
+        sock_addr.sin_addr.s_addr = inet_addr(argv[1]);
+	    connect(sockfd,(struct sockaddr*)&sock_addr,sock_addr_len);
         int packet_size = recvfrom(sockfd,buffer,sizeof(buffer),0,(struct sockaddr *)&sock_addr,&sock_addr_len);
         if(packet_size < 0){
             perror("packet_size");
@@ -45,10 +54,14 @@ int main(int argc, char const *argv[])
         if(ip_hdr->ip_p == IPPROTO_ICMP){
             cout << "Received ICMP packet" << endl;
             cout << "IP Header Length: " << (ip_hdr->ip_hl << 2) << " bytes" << endl;
+            // Modification 1
+            cout << "IP Address dest: " << inet_ntoa(ip_hdr->ip_dst) << endl << "IP Address src: " << inet_ntoa(ip_hdr->ip_src) << endl;
         }
     }
     
     close(sockfd);
+
+    BANJARE SIMP KISI KO MT BHEJNA
 
     return 0;
 }
