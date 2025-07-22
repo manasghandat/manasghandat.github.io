@@ -2,8 +2,8 @@
 title: DownUnderCTF 2025 - Writeup
 author: P0ch1ta
 date: 2025-07-22 11:33:00 +0530
-categories: [pwning]
-tags: [Kernel, CTF, DownUnderCTF, writeups]
+categories: [Pwning]
+tags: [Kernel, CTF, DownUnderCTF, Writeups]
 math: true
 mermaid: true
 ---

@@ -2,8 +2,8 @@
 title: Imaginary CTF 2023
 author: P0ch1ta
 date: 2023-07-24 11:33:00 +0530
-categories: [pwning]
-tags: [pwning, writeups]
+categories: [Pwning]
+tags: [Pwning, Writeups, ImaginaryCTF]
 math: true
 mermaid: true
 ---
