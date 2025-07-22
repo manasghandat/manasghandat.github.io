@@ -3,7 +3,6 @@ name: Lint Commit Messages
 on:
   push:
     branches:
-      - master
       - "hotfix/*"
   pull_request:
 
