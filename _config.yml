@@ -17,14 +17,14 @@ timezone: Asia/Kolkata
 
 title: P0ch1ta                          # the main title
 
-tagline: A security enthusiast. Active CTF player with InfoSecIITR. Loves pwning kernel and browsers.   # it will display as the sub-title
+tagline: Busy pwning kernel and browser.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A security enthusiast. Active CTF player with InfoSecIITR. Love pwn,rev and malware. Find blogs about various CTF challenges and malware reversing/development.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://manasghandat.github.io"
 
 github:
   username: manasghandat             # change to your github username
