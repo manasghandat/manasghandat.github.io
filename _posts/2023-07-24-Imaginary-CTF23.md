@@ -47,7 +47,7 @@ Additionally if we run checksec command we get the following results.
     PIE:      No PIE (0x400000)
 ```
 
-Thus we can exploit the buffer overflow in the `gets` function to do the `ret2win`. If you don't have any idea on how to do simple ret2win then I would recommend you to go through my playlist on <a href="https://keksite.in/posts/Introduction-to-pwning-1/">Introduction to pwnning</a>
+Thus we can exploit the buffer overflow in the `gets` function to do the `ret2win`. If you don't have any idea on how to do simple ret2win then I would recommend you to go through my playlist on <a href="https://manasghandat.github.io/posts/Introduction-to-pwning-1/">Introduction to pwnning</a>
 
 The exploit is as follows:
 
